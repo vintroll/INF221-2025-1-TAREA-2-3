@@ -32,4 +32,4 @@ En esta carpeta se encuentra la plantilla en LaTeX para la elaboración del info
 
 Debe clonar este repositorio en su máquina local y crear uno nuevo en su cuenta de GitHub que tenga el mismo nombre (INF-2025-2-TAREA-1). 
 
-## Completar todos los puntos solicitados en el [assignment-1.pdf](https://github.com/pabloealvarez/INF221-2025-1-TAREA-1/blob/master/assignment_statement/assignment-1.pdf).
+## Completar todos los puntos solicitados en el [assignment-1.pdf](https://github.com/ianCooperA/INF221-2025-1-TAREA-2/blob/main/assignment_statement/assignment-1.pdf).
