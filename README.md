@@ -1,10 +1,10 @@
-# TAREA 2 INF221 2025-1
+# TAREA 2 y 3 INF221 2025-1
 
-> Verificar siempre que se encuentra en la rama [main](https://github.com/ianCooperA/INF221-2025-1-TAREA-2/tree/main)
+> Verificar siempre que se encuentra en la rama [main](https://github.com/ianCooperA/INF221-2025-1-TAREA-2-3/tree/main)
 
-## Estructura del Repositorio `INF-2025-2-TAREA-1`  
+## Estructura del Repositorio `INF-2025-2-TAREA-2-3`  
 
-Este repositorio contiene la documentación, el código fuente y las instrucciones necesarias para la realización de la Tarea 2 de la asignatura *INF221 Algoritmos y Complejidad*.  
+Este repositorio contiene la documentación, el código fuente y las instrucciones necesarias para la realización de la Tarea 2 y 3 de la asignatura *INF221 Algoritmos y Complejidad*.  
 
 A continuación, se describe la estructura del repositorio:  
 
@@ -32,4 +32,4 @@ En esta carpeta se encuentra la plantilla en LaTeX para la elaboración del info
 
 Debe clonar este repositorio en su máquina local y crear uno nuevo en su cuenta de GitHub que tenga el mismo nombre (INF-2025-2-TAREA-1). 
 
-## Completar todos los puntos solicitados en el [assignment-1.pdf](https://github.com/ianCooperA/INF221-2025-1-TAREA-2/blob/main/assignment_statement/assignment-1.pdf).
+## Completar todos los puntos solicitados en el [assignment-1.pdf](https://github.com/ianCooperA/INF221-2025-1-TAREA-2-3/blob/main/assignment_statement/assignment-1.pdf).
