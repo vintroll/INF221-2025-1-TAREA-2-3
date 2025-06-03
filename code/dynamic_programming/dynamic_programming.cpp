@@ -3,8 +3,9 @@
 #include <string>
 #include <fstream>
 #include <algorithm>
-
+#include <chrono>
 using namespace std;
+using namespace chrono;
 
 string calcular_lcs(const string &s, const string &t) {
     int n = s.size(), m = t.size();
@@ -57,20 +58,23 @@ vector<pair<string, string>> diferencias_por_lcs(const string &s, const string &
 }
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+    ifstream input("dynamic_programming_input/input.txt");
+    ofstream output("measurements/dynamic_programming/output.txt");
+    ofstream timing("measurements/dynamic_programming/time.txt");
 
     int K;
-    cin >> K;
-    cout << K << '\n';
-    cin.ignore();
+    input >> K;
+    output << K << '\n';
+    input.ignore();
+
+    auto start = high_resolution_clock::now();
 
     while (K--) {
         string s_line, t_line, s, t;
         int n, m;
 
-        getline(cin, s_line);
-        getline(cin, t_line);
+        getline(input, s_line);
+        getline(input, t_line);
 
         n = stoi(s_line.substr(0, s_line.find(' ')));
         s = s_line.substr(s_line.find(' ') + 1);
@@ -78,10 +82,16 @@ int main() {
         t = t_line.substr(t_line.find(' ') + 1);
 
         vector<pair<string, string>> diferencias = diferencias_por_lcs(s, t);
-        cout << diferencias.size() << '\n';
+
+        output << diferencias.size() << '\n';
         for (auto &[a, b] : diferencias) {
-            cout << a << ' ' << b << '\n';
+            output << a << ' ' << b << '\n';
         }
     }
 
-    return
+    auto end = high_resolution_clock::now();
+    auto duration = duration_cast<milliseconds>(end - start);
+    timing << "Tiempo de ejecución (ms): " << duration.count() << endl;
+
+    return 0;
+}
