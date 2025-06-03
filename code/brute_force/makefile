@@ -1,21 +1,22 @@
- 
 CXX = g++
 CXXFLAGS = -std=c++17 -O0 -Wall
 
-SRC_DIR = algorithm
-BIN_DIR = bin
-BUILD_TARGET = $(BIN_DIR)/brute_force
+SRC = brute_force.cpp
+ALG = algorithm/sequence_difference.cpp
+OUT = bin/brute_force
 
-$(BUILD_TARGET): $(SRC_DIR)/sequence_difference.cpp | $(BIN_DIR)
-	$(CXX) $(CXXFLAGS) $< -o $@
+all: $(OUT)
 
-$(BIN_DIR):
-	mkdir -p $(BIN_DIR)
+$(OUT): $(SRC) $(ALG) | bin
+	$(CXX) $(CXXFLAGS) $(SRC) $(ALG) -o $(OUT)
 
-run: $(BUILD_TARGET)
-	./$(BUILD_TARGET) < input.txt > output.txt
+bin:
+	mkdir -p bin
+
+run: $(OUT)
+	./$(OUT)
 
 clean:
-	rm -rf $(BIN_DIR)
+	rm -rf bin
 
-.PHONY: run clean
+.PHONY: all run clean
