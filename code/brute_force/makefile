@@ -1,5 +1,4 @@
-# Makefile para la versión de fuerza bruta
-
+ 
 CXX = g++
 CXXFLAGS = -std=c++17 -O0 -Wall
 
